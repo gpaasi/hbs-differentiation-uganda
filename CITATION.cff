@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript."
+title: "Malaria burden and geographic distance jointly predict HbS differentiation in Uganda"
+type: software
+authors:
+  - family-names: "YourSurname"
+    given-names: "YourName"
+version: 0.1.0
+date-released: "2026-01-14"
+license: MIT
+repository-code: "https://github.com/<your-org>/ugs-hbs-malaria-ibd"
+keywords:
+  - population genetics
+  - malaria
+  - sickle cell
+  - Uganda
+  - spatial analysis

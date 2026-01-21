@@ -1,0 +1,12 @@
+# data
+data/raw/
+data/processed/
+outputs/
+.targets/
+.Rhistory
+.RData
+.DS_Store
+
+# renv
+renv/library/
+renv/python/
