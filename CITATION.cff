@@ -1,17 +1,69 @@
-cff-version: 1.2.0
-message: "If you use this repository, please cite the associated manuscript."
-title: "Malaria burden and geographic distance jointly predict HbS differentiation in Uganda"
-type: software
+cff-version: 1.0
+message: "If you use this repository, please cite it as below."
+title: "Uganda-HbS-malaria-distance: Reproducible workflow for spatial HbS differentiation analysis linking PfPR2–10 and geographic distance"
+version: "1.0.0"
+doi: ""
+date-released: 2026-01-21
 authors:
-  - family-names: "YourSurname"
-    given-names: "YourName"
-version: 0.1.0
-date-released: "2026-01-14"
-license: MIT
-repository-code: "https://github.com/<your-org>/ugs-hbs-malaria-ibd"
+  - family-names: Paasi
+    given-names: George
+    affiliation: "Makerere University, College of Health Sciences, School of Medicine, Kampala, Uganda"
+    email: georgepaasi8@gmail.com
+  - family-names: Ndeezi
+    given-names: Grace
+    affiliation: "Makerere University, College of Health Sciences, School of Medicine, Kampala, Uganda"
+    email: gndeezi@gmail.com
+  - family-names: Kiyaga
+    given-names: Charles
+    affiliation: "Busitema University, Faculty of Health Sciences, Mbale, Uganda"
+    email: ckiyaga@gmail.com
+  - family-names: Namazzi
+    given-names: Ruth
+    affiliation: "Makerere University, College of Health Sciences, School of Medicine, Kampala, Uganda"
+    email: namazzi101@gmail.com
+  - family-names: Mupere
+    given-names: Ezekiel
+    affiliation: "Makerere University, College of Health Sciences, School of Medicine, Kampala, Uganda"
+    email: mupez@yahoo.com
+  - family-names: Munabi
+    given-names: Ian Guyton
+    affiliation: "Makerere University, College of Health Sciences, School of Medicine, Kampala, Uganda"
+    email: igkmunabi@gmail.com
+  - family-names: Kiguli
+    given-names: Sarah
+    affiliation: "Makerere University, College of Health Sciences, School of Medicine, Kampala, Uganda"
+    email: skwalube@yahoo.co.uk
+  - family-names: Olupot-Olupot
+    given-names: Peter
+    affiliation: "Mbale Clinical Research Institute, Mbale, Uganda; Busitema University, Faculty of Health Sciences, Mbale, Uganda"
+    email: polupotolupot@yahoo.com
+  - family-names: Idro
+    given-names: Richard
+    affiliation: "Makerere University, College of Health Sciences, School of Medicine, Kampala, Uganda"
+    email: ridro1@gmail.com
+abstract: |
+  This repository contains code, configuration templates, and documentation to reproduce a cross-sectional
+  ecological spatial analysis of locus-specific structure at the sickle-cell variant (HbS) in HBB across Uganda.
+  The workflow summarizes subregional genotype composition, heterozygosity, Hardy–Weinberg equilibrium, and
+  Weir–Cockerham FST (global and pairwise), constructs genetic, geographic, and malaria-burden dissimilarity
+  matrices (PfPR2–10), and evaluates joint associations using multiple matrix regression with randomization (MMRR).
+  Secondary analyses include PCoA and dbRDA, with Mantel-family tests and a Rousset isolation-by-distance regression
+  implemented as sensitivity analyses. Outputs include manuscript-ready tables and figures for reporting spatial
+  heterogeneity in HbS burden and differentiation and its alignment with malaria transmission intensity and geography.
+license: "CC-BY-4.0"
+repository-code: "https://github.com/gpaasi/uganda-hbs-malaria-distance"
 keywords:
-  - population genetics
-  - malaria
-  - sickle cell
+  - HbS
+  - HBB
+  - sickle-cell
   - Uganda
-  - spatial analysis
+  - malaria
+  - PfPR2-10
+  - genetic-differentiation
+  - FST
+  - isolation-by-distance
+  - isolation-by-environment
+  - MMRR
+  - dbRDA
+  - reproducible-research
+  - public-health
