@@ -99,8 +99,6 @@ uganda-hbs-malaria-distance/
 ├── renv/
 └── renv.lock
 
----
----
 ## Data description
 
 ### 1) Genotype data (required)
