@@ -35,6 +35,7 @@ Objectives:
 
 ## Repository structure
 
+```text
 uganda-hbs-malaria-distance/
 ├── README.md
 ├── CITATION.cff
