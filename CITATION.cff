@@ -1,4 +1,4 @@
-cff-version: 1.0
+cff-version: 1.2.0
 message: "If you use this repository, please cite it as below."
 title: "Uganda-HbS-malaria-distance: Reproducible workflow for spatial HbS differentiation analysis linking PfPR2–10 and geographic distance"
 version: "1.0.0"
