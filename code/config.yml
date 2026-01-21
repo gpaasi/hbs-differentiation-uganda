@@ -1,0 +1,17 @@
+project:
+  seed: 20260114
+
+inputs:
+  genotype_counts_csv: "data/toy/genotype_counts.csv"
+  pfpr_csv: "data/toy/pfpr_subregion.csv"
+  centroids_csv: "data/toy/subregion_centroids.csv"
+
+parameters:
+  permutations_mantel: 9999
+  permutations_mmrr: 10000
+  bootstrap_rousset: 2000
+  rousset_log_base: "e"
+  fst_negative_to_zero: true
+
+outputs:
+  dir: "outputs"
