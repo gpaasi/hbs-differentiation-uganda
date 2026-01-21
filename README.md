@@ -34,30 +34,24 @@ Objectives:
 - Provide secondary multivariate summaries (PCoA, dbRDA) and sensitivity analyses (Mantel-family tests, Rousset IBD regression).
 - Produce manuscript-ready tables and figures.
 
-
-```markdown
 ## Repository structure
 
-```
-
+```text
 uganda-hbs-malaria-distance/
 ├── README.md
 ├── CITATION.cff
 ├── LICENSE
 ├── .gitignore
 ├── .github/
-│   └── workflows/                  # optional CI workflows
-│
+│   └── workflows/
 ├── code/
 │   ├── config/
-│   │   ├── config.yml              # analysis parameters (permutations, bootstrap, seeds)
-│   │   └── paths.example.yml       # example input paths (copy to paths.yml locally)
-│   │
+│   │   ├── config.yml
+│   │   └── paths.example.yml
 │   ├── pipeline/
-│   │   ├── _targets.R              # targets pipeline definition
-│   │   └── globals.R               # global options, seeds, package loads
-│   │
-│   ├── functions/                  # reusable functions (analysis library)
+│   │   ├── _targets.R
+│   │   └── globals.R
+│   ├── functions/
 │   │   ├── io.R
 │   │   ├── validate.R
 │   │   ├── hwe_fis.R
@@ -70,8 +64,7 @@ uganda-hbs-malaria-distance/
 │   │   ├── plotting.R
 │   │   ├── tables.R
 │   │   └── utils.R
-│   │
-│   └── scripts/                    # readable “chapter” scripts mirroring Methods
+│   └── scripts/
 │       ├── 00_setup.R
 │       ├── 01_ingest_clean.R
 │       ├── 02_subregion_summaries.R
@@ -85,35 +78,29 @@ uganda-hbs-malaria-distance/
 │       ├── 10_figures.R
 │       ├── 11_tables.R
 │       └── 12_report_render.R
-│
 ├── data/
-│   ├── README.md                   # what goes where in data/
-│   ├── raw/                        # genotype data (not tracked by git)
-│   ├── external/                   # PfPR and polygons (not tracked by git by default)
+│   ├── README.md
+│   ├── raw/
+│   ├── external/
 │   └── metadata/
 │       ├── data_dictionary.md
 │       ├── subregions_lookup.csv
 │       └── provenance.md
-│
 ├── outputs/
-│   ├── README.md                   # description of generated outputs
+│   ├── README.md
 │   ├── figures/
 │   ├── tables/
 │   ├── models/
 │   ├── diagnostics/
 │   └── logs/
-│
-├── paper/                          # optional manuscript assets
+├── paper/
 │   ├── README.md
 │   ├── references/
 │   │   └── references.bib
 │   └── supplementary/
-│
-├── renv/                           # reproducible R environment
+├── renv/
 └── renv.lock
 
-```
-```
 
 ## Data description
 
