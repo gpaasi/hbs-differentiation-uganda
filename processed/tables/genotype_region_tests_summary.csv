@@ -1,0 +1,4 @@
+Test,Value
+Chi-square (Monte Carlo),9.999000099990002e-5
+Fisher exact (Monte Carlo),9.999000099990002e-5
+Cramer's V,0.10042255924381163

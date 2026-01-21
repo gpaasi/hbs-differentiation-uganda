@@ -1,0 +1,129 @@
+District,Region,HbAA,HbAS,HbSS
+Agago,Acholi,811,165,12
+Amuru,Acholi,352,63,5
+Gulu,Acholi,2466,616,30
+Kitgum,Acholi,933,205,8
+Lamwo,Acholi,522,116,3
+Nwoya,Acholi,493,131,8
+Omoro,Acholi,75,24,1
+Pader,Acholi,623,135,9
+Buhweju,Ankole,235,6,1
+Bushenyi,Ankole,1255,55,1
+Ibanda,Ankole,909,53,2
+Isingiro,Ankole,1184,70,3
+Kiruhura,Ankole,958,55,3
+Mbarara,Ankole,2940,169,3
+Mitooma,Ankole,487,10,0
+Ntungamo,Ankole,1355,57,1
+Rubirizi,Ankole,419,35,5
+Sheema,Ankole,956,45,1
+Ssembabule,Ankole,546,54,1
+Bududa,Bugishu,246,16,1
+Bukwo,Bugishu,121,8,0
+Bulambuli,Bugishu,273,22,1
+Kapchorwa,Bugishu,239,17,1
+Kween,Bugishu,107,6,0
+Manafwa,Bugishu,347,43,3
+Mbale,Bugishu,958,149,10
+Namisindwa,Bugishu,80,19,1
+Sironko,Bugishu,312,32,6
+Budaka,Bukedi,219,47,1
+Busia,Bukedi,497,114,11
+Butaleja,Bukedi,235,46,6
+Butebo,Bukedi,79,17,1
+Kibuku,Bukedi,242,49,6
+Pallisa,Bukedi,344,67,1
+Tororo,Bukedi,1138,279,21
+Buliisa,Bunyoro,199,48,5
+Hoima,Bunyoro,1431,222,14
+Kagadi,Bunyoro,93,7,0
+Kakumiro,Bunyoro,89,10,1
+Kibaale,Bunyoro,1514,177,13
+Kiryandongo,Bunyoro,523,91,1
+Masindi,Bunyoro,758,134,11
+Bugiri,Busoga,563,133,8
+Buyende,Busoga,344,64,6
+Iganga,Busoga,813,201,15
+Jinja,Busoga,1414,346,30
+Kaliro,Busoga,307,67,6
+Kamuli,Busoga,592,153,10
+Luuka,Busoga,284,73,2
+Mayuge,Busoga,712,169,14
+Namayingo,Busoga,657,171,10
+Namutumba,Busoga,321,85,3
+Kampala,Kampala,11634,1837,95
+Abim,Karamoja,230,46,4
+Amudat,Karamoja,78,9,0
+Kaabong,Karamoja,204,10,0
+Kotido,Karamoja,171,18,1
+Moroto,Karamoja,127,20,2
+Nakapiripi riti,Karamoja,97,3,0
+Nakapiripirit,Karamoja,60,4,0
+Napak,Karamoja,183,19,0
+Kabale,Kigezi,1146,30,0
+Kanungu,Kigezi,809,32,3
+Kisoro,Kigezi,444,16,1
+Rubanda,Kigezi,99,1,0
+Rukiga,Kigezi,87,13,0
+Rukungiri,Kigezi,1242,49,0
+Alebtong,Lango,260,84,7
+Aleptong,Lango,83,16,0
+Amolatar,Lango,453,93,4
+Apac,Lango,813,204,20
+Dokolo,Lango,387,90,5
+Kole,Lango,426,103,8
+Lira,Lango,1478,369,31
+Otuke,Lango,420,101,10
+Oyam,Lango,858,211,13
+Buikwe,North Buganda,1455,290,18
+Buvuma,North Buganda,361,63,4
+Kayunga,North Buganda,644,137,10
+Kiboga,North Buganda,699,115,4
+Kyankwanzi,North Buganda,275,48,1
+Kyankwazi,North Buganda,94,6,0
+Luweero,North Buganda,1299,213,18
+Luwero,North Buganda,83,15,0
+Mityana,North Buganda,1149,168,9
+Mubende,North Buganda,1896,226,10
+Mukono,North Buganda,1441,218,9
+Nakaseke,North Buganda,552,90,4
+Nakasongola,North Buganda,495,98,12
+Bukomansimbi,South Buganda,583,91,5
+Butambala,South Buganda,441,71,5
+Gomba,South Buganda,452,56,6
+Kalangala,South Buganda,578,82,3
+Kalungu,South Buganda,876,140,6
+Kyotera,South Buganda,91,8,0
+Lwengo,South Buganda,777,92,3
+Lyantonde,South Buganda,649,59,1
+Masaka,South Buganda,2075,309,14
+Mpigi,South Buganda,1009,130,4
+Rakai,South Buganda,1951,364,8
+Sembabule,South Buganda,89,11,0
+Wakiso,South Buganda,3843,551,19
+Amuria,Teso,547,115,10
+Bukedea,Teso,323,48,0
+Kaberamaido,Teso,516,96,4
+Katakwi,Teso,495,92,2
+Kumi,Teso,393,63,4
+Ngora,Teso,244,62,3
+Serere,Teso,447,93,11
+Soroti,Teso,812,158,13
+Bundibugyo,Tooro,317,86,6
+Bunyangabu,Tooro,91,9,0
+Kabarole,Tooro,2829,300,6
+Kamwenge,Tooro,1003,64,1
+Kasese,Tooro,1177,131,6
+Kyegegwa,Tooro,809,81,4
+Kyenjojo,Tooro,1674,183,5
+Ntoroko,Tooro,274,38,0
+Adjumani,West Nile,291,46,1
+Arua,West Nile,938,133,2
+Koboko,West Nile,279,38,0
+Maracha,West Nile,96,4,0
+Maracha-Terego,West Nile,86,7,0
+Moyo,West Nile,236,25,0
+Nebbi,West Nile,739,159,12
+Pakwach,West Nile,82,16,0
+Yumbe,West Nile,280,32,0
+Zombo,West Nile,360,48,1
