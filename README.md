@@ -5,7 +5,6 @@
 [![Made with R](https://img.shields.io/badge/Made%20with-R-276DC3.svg)](https://www.r-project.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
-[![R-CMD-check](https://github.com/gpaasi/hbs-differentiation-uganda/actions/workflows/r-cmd-check.yaml/badge.svg)](https://github.com/gpaasi/hbs-differentiation-uganda/actions/workflows/r-cmd-check.yaml)
 
 
 
