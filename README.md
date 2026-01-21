@@ -1,4 +1,3 @@
-```markdown
 # Malaria burden and geographic distance jointly predict HbS differentiation in Uganda
 
 ## Table of Contents
@@ -36,7 +35,6 @@ Objectives:
 
 ## Repository structure
 
-```text
 uganda-hbs-malaria-distance/
 ├── README.md
 ├── CITATION.cff
@@ -101,7 +99,8 @@ uganda-hbs-malaria-distance/
 ├── renv/
 └── renv.lock
 
-
+---
+---
 ## Data description
 
 ### 1) Genotype data (required)
