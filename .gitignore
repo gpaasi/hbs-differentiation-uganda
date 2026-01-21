@@ -1,12 +1,50 @@
-# data
-data/raw/
-data/processed/
-outputs/
-.targets/
+.DS_Store
+Thumbs.db
+~$*.docx
+*.tmp
 .Rhistory
 .RData
-.DS_Store
+.Rproj.user/
+__pycache__/
+*.pyc
 
-# renv
+# Manuscript artifacts
+paper/**/*.pdf
+paper/**/*.docx~
+manuscript/*.pdf
+manuscript/*.docx~
+
+# Supplementary artifacts
+supplementary/*.pdf
+paper/supplementary/**/*.pdf
+
+# Figures (generated)
+figures/*.png
+figures/*.pdf
+outputs/figures/
+outputs/**/*.png
+outputs/**/*.pdf
+
+# Data (do not commit raw/external/private data)
+data/*.csv
+data/*.xlsx
+data/raw/
+data/external/
+data/processed/
+
+# Logs and diagnostics
+*.log
+outputs/logs/
+outputs/diagnostics/
+
+# Coverage and editor settings
+coverage/
+.vscode/
+.idea/
+*.bak
+*~
+
+# R package environment and caches
 renv/library/
-renv/python/
+.Rproj.user/
+_targets/
