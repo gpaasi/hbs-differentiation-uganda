@@ -20,7 +20,7 @@
 ---
 
 ## Overview
-This repository contains all code, templates, and documentation needed to reproduce the analysis for:
+This repository contains code, configuration templates, and documentation to reproduce the analysis for:
 
 **Malaria burden and geographic distance jointly predict HbS differentiation in Uganda**
 
@@ -30,16 +30,96 @@ Objectives:
 - Summarize subregional genotype composition (HbAA, HbAS, HbSS) and HbS allele frequency.
 - Quantify locus-specific differentiation using global and pairwise Weir–Cockerham \(F_{ST}\).
 - Construct genetic, geographic, and malaria-burden dissimilarity matrices.
-- Estimate the independent associations of geographic distance and PfPR dissimilarity with HbS differentiation using **MMRR** (primary inference).
-- Provide complementary ordination (PCoA, dbRDA) and sensitivity analyses (Mantel-family tests, Rousset IBD regression).
+- Estimate independent associations of geographic distance and PfPR dissimilarity with HbS differentiation using multiple matrix regression with randomization (MMRR) (primary inference).
+- Provide secondary multivariate summaries (PCoA, dbRDA) and sensitivity analyses (Mantel-family tests, Rousset IBD regression).
 - Produce manuscript-ready tables and figures.
+
+---
+
+## Repository structure
+```
+
+uganda-hbs-malaria-distance/
+├── README.md                    ← this file
+├── CITATION.cff                 ← repository citation metadata
+├── LICENSE                      ← dual license notice (MIT for code, CC BY 4.0 for non-code content)
+├── .gitignore                   ← ignore patterns (raw data, outputs, caches)
+│
+├── .github/
+│   └── workflows/               ← optional CI workflows
+│
+├── code/
+│   ├── config/
+│   │   ├── config.yml           ← analysis parameters (permutations, bootstrap, seeds)
+│   │   └── paths.example.yml    ← example input paths (copy to paths.yml locally)
+│   │
+│   ├── pipeline/
+│   │   ├── _targets.R           ← targets pipeline definition
+│   │   └── globals.R            ← global options, seeds, package loads
+│   │
+│   ├── functions/               ← reusable functions (analysis library)
+│   │   ├── io.R
+│   │   ├── validate.R
+│   │   ├── hwe_fis.R
+│   │   ├── genetics_fst.R
+│   │   ├── distances.R
+│   │   ├── mantel.R
+│   │   ├── mmrr.R
+│   │   ├── ordination.R
+│   │   ├── rousset.R
+│   │   ├── plotting.R
+│   │   ├── tables.R
+│   │   └── utils.R
+│   │
+│   └── scripts/                 ← readable “chapter” scripts mirroring Methods
+│       ├── 00_setup.R
+│       ├── 01_ingest_clean.R
+│       ├── 02_subregion_summaries.R
+│       ├── 03_hwe_fis.R
+│       ├── 04_fst.R
+│       ├── 05_distance_matrices.R
+│       ├── 06_mantel_partial.R
+│       ├── 07_mmrr.R
+│       ├── 08_pcoa_dbrda.R
+│       ├── 09_rousset_ibd.R
+│       ├── 10_figures.R
+│       ├── 11_tables.R
+│       └── 12_report_render.R
+│
+├── data/
+│   ├── README.md                ← what goes where in data/
+│   ├── raw/                     ← input genotype data (not tracked by git)
+│   ├── external/                ← PfPR and polygons (not tracked by git by default)
+│   └── metadata/
+│       ├── data_dictionary.md
+│       ├── subregions_lookup.csv
+│       └── provenance.md
+│
+├── outputs/
+│   ├── README.md                ← description of outputs
+│   ├── figures/
+│   ├── tables/
+│   ├── models/
+│   ├── diagnostics/
+│   └── logs/
+│
+├── paper/                       ← optional manuscript assets
+│   ├── README.md
+│   ├── references/
+│   │   └── references.bib
+│   └── supplementary/
+│
+├── renv/                        ← reproducible R environment
+└── renv.lock
+
+````
 
 ---
 
 ## Data description
 
 ### 1) Genotype data (required)
-Place in `data/raw/` (not tracked by git).
+Place genotype data in `data/raw/` (not tracked by git).
 
 Supported formats:
 - Individual-level CSV/TSV (preferred), or
@@ -54,28 +134,30 @@ Supported formats:
 - `n_HbAA`, `n_HbAS`, `n_HbSS`
 
 Optional but useful:
-- `year` (collection year; enables time-matched PfPR sensitivity checks)
-- `district` or `facility_id` (enables internal heterogeneity diagnostics)
+- `year` (collection year, enables time-aligned PfPR sensitivity checks)
+- `district` or `facility_id` (supports diagnostics for within-subregion mixture)
 
-### 2) Subregion polygons (required for mapping; optional for core inference)
-Place in `data/external/` (not tracked by git by default).
+### 2) Subregion polygons (required for mapping, optional for core inference)
+Place polygons in `data/external/` (not tracked by git by default).
 - Shapefile or GeoJSON
-- Must contain a field that matches the 15 canonical subregion names (or mappable via lookup)
+- Must include a subregion name field that matches the 15 canonical subregion names (or can be mapped via `data/metadata/subregions_lookup.csv`)
 
 ### 3) Malaria burden (required)
-Place in `data/external/` (not tracked by git by default).
+Place malaria burden data in `data/external/` (not tracked by git by default).
 - CSV with:
   - `subregion`
   - `pfpr_2_10` (mean PfPR\(_{2–10}\))
-- If you have year-specific PfPR summaries, include:
-  - `year`
-  - `pfpr_2_10`
+
+If year-specific malaria summaries are available, include:
+- `year`
+- `pfpr_2_10`
 
 ---
 
 ## Installation and environment setup
 
 ### Option A: Reproducible environment with `renv` (recommended)
+From the repository root:
 ```r
 install.packages("renv")
 renv::restore()
@@ -171,8 +253,10 @@ Main outputs:
 
 Purpose: Provide theory- and diagnostic-based checks.
 
+Notes:
+
 * Mantel and partial Mantel tests are treated as descriptive sensitivity analyses.
-* Rousset regression provides a theory-linked IBD sensitivity check with bootstrap CI.
+* Rousset regression provides a theory-linked isolation-by-distance sensitivity check with bootstrap confidence intervals.
 
 Run:
 
@@ -191,6 +275,8 @@ Main outputs:
 
 ## Workflow 6: Figures, tables, and report rendering
 
+Purpose: Produce manuscript-ready artifacts.
+
 Run:
 
 ```r
@@ -203,7 +289,7 @@ Main outputs:
 * `outputs/figures/` (PNG/PDF figures)
 * `outputs/tables/` (CSV tables)
 
-If you use a report (Quarto/markdown), run:
+If you render a report (Quarto/markdown), run:
 
 ```r
 source("code/scripts/12_report_render.R")
@@ -231,13 +317,18 @@ tar_make()
 
 ## How to cite
 
-Paasi G, Namazzi R, Asiimwe G, et al. Malaria burden and geographic distance jointly predict HbS differentiation in Uganda. 2026. Zenodo DOI: 
+See `CITATION.cff` for repository citation metadata.
+
+If you archive a release on Zenodo, add the DOI to `CITATION.cff` and cite the Zenodo record in the manuscript.
+
 ---
 
 ## License
 
-* MIT (code)
-* CC BY 4.0 (documentation and figures)
+This repository uses a dual-license model (see `LICENSE`):
+
+* Code (analysis scripts, pipeline, and functions) is licensed under the MIT License.
+* Documentation, manuscript text, and figures are licensed under CC BY 4.0 unless otherwise noted.
 
 ---
 
@@ -248,6 +339,5 @@ Makerere University
 Email: georgepaasi8@gmail.com
 
 ```
-
 ::contentReference[oaicite:0]{index=0}
 ```
