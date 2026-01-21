@@ -1,0 +1,5 @@
+Test,r,p
+Mantel: genetic ~ geography,0.4196,0.0035
+Mantel: genetic ~ Δmalaria,0.3814,0.0056
+Partial Mantel: genetic ~ Δmalaria | geography,0.2342,0.0283
+Partial Mantel: genetic ~ geography | Δmalaria,0.2979,0.02

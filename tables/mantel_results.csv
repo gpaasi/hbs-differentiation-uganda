@@ -1,0 +1,4 @@
+Test,r,p_value
+Mantel: Genetic ~ Geography (IBD),0.43333577843389737,0.0026
+Mantel: Genetic ~ DeltaPfPR (IBE),0.38136682150159446,0.0045
+Partial Mantel: Genetic ~ DeltaPfPR | Geography,0.24401043649721796,0.028

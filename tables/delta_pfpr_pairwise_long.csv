@@ -1,0 +1,106 @@
+Region1,Region2,DeltaPfPR
+Acholi,Ankole,0.29738902300000003
+Acholi,Bugishu,0.211106077
+Acholi,Bukedi,0.14605027400000004
+Acholi,Bunyoro,0.139023632
+Acholi,Busoga,0.08147865500000001
+Acholi,South Buganda,0.269383967
+Acholi,North Buganda,0.210002408
+Acholi,Kampala,0.31372346
+Acholi,Karamoja,0.012263358000000002
+Acholi,Kigezi,0.312980466
+Acholi,Lango,0.028625190000000023
+Acholi,Teso,0.025987953000000008
+Acholi,Tooro,0.241681263
+Acholi,West Nile,0.14620623
+Ankole,Bugishu,0.08628294600000001
+Ankole,Bukedi,0.151338749
+Ankole,Bunyoro,0.15836539100000002
+Ankole,Busoga,0.21591036800000002
+Ankole,South Buganda,0.028005056000000014
+Ankole,North Buganda,0.08738661500000001
+Ankole,Kampala,0.016334436999999993
+Ankole,Karamoja,0.28512566500000003
+Ankole,Kigezi,0.015591442999999996
+Ankole,Lango,0.268763833
+Ankole,Teso,0.27140107
+Ankole,Tooro,0.05570776000000001
+Ankole,West Nile,0.15118279300000004
+Bugishu,Bukedi,0.06505580299999997
+Bugishu,Bunyoro,0.072082445
+Bugishu,Busoga,0.129627422
+Bugishu,South Buganda,0.05827789
+Bugishu,North Buganda,0.0011036690000000016
+Bugishu,Kampala,0.102617383
+Bugishu,Karamoja,0.198842719
+Bugishu,Kigezi,0.10187438900000001
+Bugishu,Lango,0.18248088699999998
+Bugishu,Teso,0.185118124
+Bugishu,Tooro,0.030575186000000004
+Bugishu,West Nile,0.06489984700000001
+Bukedi,Bunyoro,0.007026642000000027
+Bukedi,Busoga,0.06457161900000002
+Bukedi,South Buganda,0.12333369299999997
+Bukedi,North Buganda,0.06395213399999997
+Bukedi,Kampala,0.16767318599999997
+Bukedi,Karamoja,0.13378691600000003
+Bukedi,Kigezi,0.16693019199999998
+Bukedi,Lango,0.11742508400000001
+Bukedi,Teso,0.12006232100000003
+Bukedi,Tooro,0.09563098899999997
+Bukedi,West Nile,1.5595599999995713e-4
+Bunyoro,Busoga,0.057544977
+Bunyoro,South Buganda,0.130360335
+Bunyoro,North Buganda,0.070978776
+Bunyoro,Kampala,0.174699828
+Bunyoro,Karamoja,0.126760274
+Bunyoro,Kigezi,0.173956834
+Bunyoro,Lango,0.11039844199999999
+Bunyoro,Teso,0.113035679
+Bunyoro,Tooro,0.102657631
+Bunyoro,West Nile,0.0071825979999999845
+Busoga,South Buganda,0.187905312
+Busoga,North Buganda,0.128523753
+Busoga,Kampala,0.232244805
+Busoga,Karamoja,0.06921529700000001
+Busoga,Kigezi,0.231501811
+Busoga,Lango,0.05285346499999999
+Busoga,Teso,0.055490702
+Busoga,Tooro,0.160202608
+Busoga,West Nile,0.06472757499999998
+South Buganda,Teso,0.243396014
+South Buganda,Tooro,0.027702703999999995
+South Buganda,West Nile,0.12317773700000001
+North Buganda,South Buganda,0.059381559
+North Buganda,Teso,0.184014455
+North Buganda,Tooro,0.031678855000000006
+North Buganda,West Nile,0.06379617800000001
+Kampala,South Buganda,0.04433949300000001
+Kampala,North Buganda,0.10372105200000001
+Kampala,Karamoja,0.301460102
+Kampala,Kigezi,7.429939999999968e-4
+Kampala,Lango,0.28509827
+Kampala,Teso,0.287735507
+Kampala,Tooro,0.072042197
+Kampala,West Nile,0.16751723000000002
+Karamoja,South Buganda,0.257120609
+Karamoja,North Buganda,0.19773905
+Karamoja,Kigezi,0.300717108
+Karamoja,Lango,0.01636183200000002
+Karamoja,Teso,0.013724595000000006
+Karamoja,Tooro,0.229417905
+Karamoja,West Nile,0.133942872
+Kigezi,South Buganda,0.04359649900000001
+Kigezi,North Buganda,0.10297805800000001
+Kigezi,Lango,0.284355276
+Kigezi,Teso,0.286992513
+Kigezi,Tooro,0.071299203
+Kigezi,West Nile,0.16677423600000002
+Lango,South Buganda,0.24075877699999998
+Lango,North Buganda,0.18137721799999998
+Lango,Teso,0.0026372370000000145
+Lango,Tooro,0.21305607299999998
+Lango,West Nile,0.11758103999999997
+Teso,Tooro,0.21569331
+Teso,West Nile,0.12021827699999998
+Tooro,West Nile,0.09547503300000001
