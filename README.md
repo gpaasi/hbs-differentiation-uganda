@@ -34,30 +34,30 @@ Objectives:
 - Provide secondary multivariate summaries (PCoA, dbRDA) and sensitivity analyses (Mantel-family tests, Rousset IBD regression).
 - Produce manuscript-ready tables and figures.
 
----
 
+```markdown
 ## Repository structure
+
 ```
 
 uganda-hbs-malaria-distance/
-├── README.md                    ← this file
-├── CITATION.cff                 ← repository citation metadata
-├── LICENSE                      ← dual license notice (MIT for code, CC BY 4.0 for non-code content)
-├── .gitignore                   ← ignore patterns (raw data, outputs, caches)
-│
+├── README.md
+├── CITATION.cff
+├── LICENSE
+├── .gitignore
 ├── .github/
-│   └── workflows/               ← optional CI workflows
+│   └── workflows/                  # optional CI workflows
 │
 ├── code/
 │   ├── config/
-│   │   ├── config.yml           ← analysis parameters (permutations, bootstrap, seeds)
-│   │   └── paths.example.yml    ← example input paths (copy to paths.yml locally)
+│   │   ├── config.yml              # analysis parameters (permutations, bootstrap, seeds)
+│   │   └── paths.example.yml       # example input paths (copy to paths.yml locally)
 │   │
 │   ├── pipeline/
-│   │   ├── _targets.R           ← targets pipeline definition
-│   │   └── globals.R            ← global options, seeds, package loads
+│   │   ├── _targets.R              # targets pipeline definition
+│   │   └── globals.R               # global options, seeds, package loads
 │   │
-│   ├── functions/               ← reusable functions (analysis library)
+│   ├── functions/                  # reusable functions (analysis library)
 │   │   ├── io.R
 │   │   ├── validate.R
 │   │   ├── hwe_fis.R
@@ -71,7 +71,7 @@ uganda-hbs-malaria-distance/
 │   │   ├── tables.R
 │   │   └── utils.R
 │   │
-│   └── scripts/                 ← readable “chapter” scripts mirroring Methods
+│   └── scripts/                    # readable “chapter” scripts mirroring Methods
 │       ├── 00_setup.R
 │       ├── 01_ingest_clean.R
 │       ├── 02_subregion_summaries.R
@@ -87,34 +87,33 @@ uganda-hbs-malaria-distance/
 │       └── 12_report_render.R
 │
 ├── data/
-│   ├── README.md                ← what goes where in data/
-│   ├── raw/                     ← input genotype data (not tracked by git)
-│   ├── external/                ← PfPR and polygons (not tracked by git by default)
+│   ├── README.md                   # what goes where in data/
+│   ├── raw/                        # genotype data (not tracked by git)
+│   ├── external/                   # PfPR and polygons (not tracked by git by default)
 │   └── metadata/
 │       ├── data_dictionary.md
 │       ├── subregions_lookup.csv
 │       └── provenance.md
 │
 ├── outputs/
-│   ├── README.md                ← description of outputs
+│   ├── README.md                   # description of generated outputs
 │   ├── figures/
 │   ├── tables/
 │   ├── models/
 │   ├── diagnostics/
 │   └── logs/
 │
-├── paper/                       ← optional manuscript assets
+├── paper/                          # optional manuscript assets
 │   ├── README.md
 │   ├── references/
 │   │   └── references.bib
 │   └── supplementary/
 │
-├── renv/                        ← reproducible R environment
+├── renv/                           # reproducible R environment
 └── renv.lock
 
-````
-
----
+```
+```
 
 ## Data description
 
