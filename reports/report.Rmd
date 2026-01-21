@@ -1,0 +1,8 @@
+\
+    ---
+    title: "Uganda Genetic Analysis — Report"
+    author: "Your Name"
+    format: html
+    ---
+
+    This is a placeholder report. Knit after running analyses to include figures and tables.

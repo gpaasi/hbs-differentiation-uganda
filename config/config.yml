@@ -1,0 +1,34 @@
+# Global analysis configuration
+project_name: "Uganda Genetic Analysis"
+seed: 1234
+
+# Genotype import settings
+genotype:
+  ploidy: 2
+  allele_sep: "/"
+  missing_char: "NA"
+  strata_columns: ["Region", "Region1", "District"]
+  id_column: "IndividualID"
+
+# Coordinates file and columns
+coords:
+  file: "data/raw/coords.csv"
+  region_column: "Region"
+  lon_column: "Longitude"
+  lat_column: "Latitude"
+
+# Malaria burden file and column
+malaria:
+  file: "data/raw/malaria_burden.csv"
+  region_column: "Region"
+  value_column: "Malaria_Parasites_Percent"
+
+# IBD/Spatial settings
+spatial:
+  distance_threshold_km: 100
+  crs: "EPSG:4326"
+
+# Performance
+parallel:
+  enable: true
+  workers: "auto"   # or integer
